@@ -35,18 +35,28 @@ FAQ
 
 Q: Can I use track activities on mobile devices? 
 A: Yes. Please contact NuConomy support at support@nuconomy.com and we will guide you through integration on mobile devices.
+
 Q: Can I track activities on RSS feeds? 
 A: Yes. Please contact NuConomy support at support@nuconomy.com and we will guide you through integration on RSS feeds.
+
 Q: Can I track activities on emails? 
 A: Yes. Please contact NuConomy support at support@nuconomy.com and we will guide you through integration on emails. 
+
 Q: Do I have to choose just one API? 
 A: No. You can combine calls through all of our APIs. All these APIs offer similar functionality. When determining which API(s) to implement, you should think through what you wish to measure and where that data is most accurately and most easily retrieved. 
+
 Q: Must I notify users that I am tracking them?
 A: No. Using NuConomy is not different than tracking certain activities in your own database. NuConomy will not sell this information to 3rd parties and you own all of your information. NuConomy also fully complies with US privacy laws; we take your privacy and your users’ privacy very seriously. 
-Q: Do you support calls to the API over https? A: Yes. Simply import our API using https instead of http. Q: How many generic parameters can I use? 
+
+Q: Do you support calls to the API over https? 
+A: Yes. Simply import our API using https instead of http. 
+
+Q: How many generic parameters can I use? 
 A: We currently support five generic parameters for every site you track. 
+
 Q: How long do you save my site information? 
 A: We currently save all your site information history without any limit.
+
 Q: How can I get more help on your API or the integration process? 
 A: Please contact our support team at any time at support@nuconomy.com and we will get back to you as soon as possible.
 
