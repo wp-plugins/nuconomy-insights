@@ -4,7 +4,7 @@ Plugin Name: Nuconomy Insights
 Plugin URI: http://nuconomy.com/
 Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="index.php?page=nuconomy/nuconomy.php">here</a>.
 Author: Nuconomy LTD
-Version: 1.24
+Version: 1.25
 Author URI: http://nuconomy.com/
 */
 
@@ -43,7 +43,7 @@ define(NUCONOMY_PAGE_HIT,683);
 define(NUCONOMY_POST_HIT,96);
 define(NUCONOMY_SEARCH_HIT,684);
 
-define(NUCONOMY_VERSION,1.24);
+define(NUCONOMY_VERSION,1.25);
 
 define(NUCONOMY_ENROLLMENT,"http://ws.nuconomy.com/Enrollment.asmx");
 
@@ -76,12 +76,12 @@ define(NUCONOMY_STR_STEP1_REQUEST_SENT,'A request for an account has been sent t
 define(NUCONOMY_STR_STEP1_REPLY_NOT_REC,'If you do not receive an email, or wish to use a different email address than the one specified, please click on the Reset Request button and begin your request again.');
 define(NUCONOMY_STR_RESET_BUT,'Reset Request');
 define(NUCONOMY_STR_STEP2,'Step 2 out of 2 has completed successfully.');
-define(NUCONOMY_STR_STEP2_REC,'Your request has been received by NuConomy and is now waiting for their Gerbils’ approval.');
+define(NUCONOMY_STR_STEP2_REC,'Your request has been received by NuConomy and is now waiting for their Gerbils approval.');
 define(NUCONOMY_STR_STEP2_GERB,'Nuconomy assures their customers they use only the finest of Gerbils, so a reply should be arriving very soon now.');
 define(NUCONOMY_STR_RESET,'If you wish to reset your registration, please click on the Reset Request button and begin your registretion again.');
 define(NUCONOMY_STR_STEP3,'Nuconomy Insights is activated');
 define(NUCONOMY_STR_ACTIVE,'Nothing to do here.');
-define(NUCONOMY_STR_DASHBOARD_LINK,'You can view your site\'s insights under the <a href="index.php?page=nuconomy/nuconomy.php"><em>Nuconomy Insights</em></a> dashboard tab.');
+define(NUCONOMY_STR_DASHBOARD_LINK,'You can view your site\'s insights under the <a href="admin.php?page=nuconomy/nuconomy.php"><em>Nuconomy Insights</em></a> dashboard tab.');
 define(NUCONOMY_STR_NAME,'Your name:');
 define(NUCONOMY_STR_EMAIL,'Your e-mail:');
 define(NUCONOMY_STR_BLOGURL,'Your blog url:');
