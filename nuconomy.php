@@ -2,9 +2,9 @@
 /*
 Plugin Name: Nuconomy Insights
 Plugin URI: http://nuconomy.com/
-Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="index.php?page=nuconomy-insights/nuconomy.php">here</a>.
+Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="admin.php?page=nuconomy-insights/nuconomy.php">here</a>.
 Author: Nuconomy LTD
-Version: 1.3
+Version: 1.31
 Author URI: http://nuconomy.com/
 */
 
@@ -43,7 +43,7 @@ define(NUCONOMY_PAGE_HIT,683);
 define(NUCONOMY_POST_HIT,96);
 define(NUCONOMY_SEARCH_HIT,684);
 
-define(NUCONOMY_VERSION,1.3);
+define(NUCONOMY_VERSION,1.31);
 
 define(NUCONOMY_ENROLLMENT,"http://ws.nuconomy.com/Enrollment.asmx");
 
@@ -81,7 +81,7 @@ define(NUCONOMY_STR_STEP2_GERB,'Nuconomy assures their customers they use only t
 define(NUCONOMY_STR_RESET,'If you wish to reset your registration, please click on the Reset Request button and begin your registretion again.');
 define(NUCONOMY_STR_STEP3,'Nuconomy Insights is activated');
 define(NUCONOMY_STR_ACTIVE,'Nothing to do here.');
-define(NUCONOMY_STR_DASHBOARD_LINK,'You can view your site\'s insights under the <a href="index.php?page=nuconomy-insights/nuconomy.php"><em>Nuconomy Insights</em></a> dashboard tab.');
+define(NUCONOMY_STR_DASHBOARD_LINK,'You can view your site\'s insights under the <a href="admin.php?page=nuconomy-insights/nuconomy.php"><em>Nuconomy Insights</em></a> dashboard tab.');
 define(NUCONOMY_STR_NAME,'Your name:');
 define(NUCONOMY_STR_EMAIL,'Your e-mail:');
 define(NUCONOMY_STR_BLOGURL,'Your blog url:');
