@@ -66,5 +66,5 @@ Our platform is completely free.
 
 Screenshots and a writeup by TechCrunch can be found here: 
 
-http://www.techcrunch.com/2008/02/11/nuconomyemerges-to-provide-next-generation-site-analytics/ 
+http://www.techcrunch.com/2008/02/11/nuconomy-emerges-to-provide-next-generation-site-analytics/
 
