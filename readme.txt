@@ -4,7 +4,7 @@ Donate link:
 Tags: analytics, insights, data, ratings
 Requires at least: 2.3
 Tested up to: 2.6.2
-Stable tag: 1.31
+Stable tag: 1.32
 
 Go beyond traditional metrics like the page view and instead measure engagement.
 == Description ==

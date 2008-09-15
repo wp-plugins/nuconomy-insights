@@ -4,7 +4,7 @@ Plugin Name: Nuconomy Insights
 Plugin URI: http://nuconomy.com/
 Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="admin.php?page=nuconomy-insights/nuconomy.php">here</a>.
 Author: Nuconomy LTD
-Version: 1.31
+Version: 1.32
 Author URI: http://nuconomy.com/
 */
 
@@ -43,7 +43,7 @@ define(NUCONOMY_PAGE_HIT,683);
 define(NUCONOMY_POST_HIT,96);
 define(NUCONOMY_SEARCH_HIT,684);
 
-define(NUCONOMY_VERSION,1.31);
+define(NUCONOMY_VERSION,1.32);
 
 define(NUCONOMY_ENROLLMENT,"http://ws.nuconomy.com/Enrollment.asmx");
 
@@ -453,8 +453,9 @@ function nucon_send_enrolment($email,$name) {
 	    $submit_vars["enrollmentType"] = "WordPressMU";
 	  } else {
       $submit_vars["enrollmentType"] = "WordPress";
+	  $submit_vars["pluginVersion"] = NUCONOMY_VERSION;	  
     }
-  		
+	
     $result = $client->call('RegisterNewSite', $submit_vars,'http://services.nuconomy.com/','http://services.nuconomy.com/RegisterNewSite', false, null, 'rpc', 'literal');
       $retval = !$client->getError();
 
