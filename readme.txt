@@ -17,7 +17,7 @@ User level. We track activities at the user level, using registration data or bl
 Deep, actionable behavioral insights. Insights into what causes users to do certain activities (e.g. post, comment, share, trackback, etc.). Everything is exposed via a two-way API, allowing the insights to be acted upon immediately vs. just being included in a report. 
 Our API implements four ways: JavaScript; ActionScript; Silverlight; and Server side (REST/SOAP).
 
-Optimization. At the highest level, our goal is to optimize users' digital experience.  You can input your blogging goals (e.g. increase comments, increase shares, etc.) and our system tells you how to optimize your digital assets to achieve this goal. Through the API, the system can auto-correct and dynamically ‘learn’ to continue optimization. The
+Optimization. At the highest level, our goal is to optimize users' digital experience.  You can input your blogging goals (e.g. increase comments, increase shares, etc.) and our system tells you how to optimize your digital assets to achieve this goal. Through the API, the system can auto-correct and dynamically 'learn' to continue optimization. The
 powerful 1:1 marketing and programming that we have often aspired to is now possible.
 
 Easy to implement. Implementation takes a few seconds.  See below.
@@ -30,8 +30,6 @@ Easy to implement. Implementation takes a few seconds.  See below.
 3. Follow the instrucions and activate your blog at nuconomy on the plugin settings page.
 
 == Frequently Asked Questions ==
-
-FAQ
 
 Q: Can I use track activities on mobile devices? 
 A: Yes. Please contact NuConomy support at support@nuconomy.com and we will guide you through integration on mobile devices.
@@ -46,7 +44,7 @@ Q: Do I have to choose just one API?
 A: No. You can combine calls through all of our APIs. All these APIs offer similar functionality. When determining which API(s) to implement, you should think through what you wish to measure and where that data is most accurately and most easily retrieved. 
 
 Q: Must I notify users that I am tracking them?
-A: No. Using NuConomy is not different than tracking certain activities in your own database. NuConomy will not sell this information to 3rd parties and you own all of your information. NuConomy also fully complies with US privacy laws; we take your privacy and your users’ privacy very seriously. 
+A: No. Using NuConomy is not different than tracking certain activities in your own database. NuConomy will not sell this information to 3rd parties and you own all of your information. NuConomy also fully complies with US privacy laws; we take your privacy and your users' privacy very seriously. 
 
 Q: Do you support calls to the API over https? 
 A: Yes. Simply import our API using https instead of http. 
