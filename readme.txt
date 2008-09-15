@@ -25,7 +25,7 @@ Easy to implement. Implementation takes a few seconds.  See below.
 
 == Installation ==
 
-1. Upload `nuconomy` folder to the `/wp-content/plugins/` directory.
+1. Upload `nuconomy-insights` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Follow the instrucions and activate your blog at nuconomy on the plugin settings page.
 
