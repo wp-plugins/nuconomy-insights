@@ -1,4 +1,4 @@
-=== nuconomy insights===
+=== Nuconomy Insights ===
 Contributors: nuconomy
 Donate link: 
 Tags: analytics, insights, data, ratings
