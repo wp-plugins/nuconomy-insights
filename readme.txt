@@ -70,9 +70,9 @@ http://www.techcrunch.com/2008/02/11/nuconomy-emerges-to-provide-next-generation
 
 1. Automatic Insights: We've added some really cool technology we call Sage that analyzes your traffic and finds interesting anomalies and stories to tell you.
 2. Do click on these to see what happens.
-3. Invite user – The new “Invite user” link next to your name on the top right corner lets you provide access to your stats to anyone you’d like.
-4. New dashboard capability – compare activities in a richer way.
+3. Invite user: The new 'Invite user' link next to your name on the top right corner lets you provide access to your stats to anyone you’d like.
+4. New dashboard capability: compare activities in a richer way.
 5. New Content Reports: content reports can be filtered by different content types. For example, if you choose the Tag content type, you will get the Tags that users interacted with your blog
-6. You can also filter your content by the Activities users performed. For example: RSS Item Click – Which posts did users click on when they were viewed through the RSS feed.
-7. Drill down to a user level:  By clicking on a user name in the community dashboard you can drill down to see data on that specific user – the activities he has made, associated tags, etc.
-8. User contribution data 
+6. You can also filter your content by the Activities users performed. For example: 'RSS Item Click' means which posts did users click on when they were viewed through the RSS feed.
+7. Drill down to a user level: By clicking on a user name in the community dashboard you can drill down to see data on that specific user for example: the activities he has made, associated tags, etc.
+8. User contribution data.
