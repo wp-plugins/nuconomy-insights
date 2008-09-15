@@ -61,8 +61,8 @@ define(NUCONOMY_STR_REGISTRATION_SUCCESS,'Your account with Nuconomy has been su
 define(NUCONOMY_STR_ENROLLMENT_SUCCESS,'The enrollment request was successfully sent to nuconomy. Next you will recieve an e-mail with instructions on how to authenticate your request.');
 define(NUCONOMY_STR_ERROR,'Something bad has happend, please try again in a few minutes.');
 define(NUCONOMY_STR_RESTART_CONFIRM,'Are you sure you want to reset the activation process?');
-define(NUCONOMY_STR_NOT_REGISTERED,'Nuconomy Plugin:');
-define(NUCONOMY_STR_MUST_REGISTER,'You must <a href="%1$s">complete the activation process</a> in order to use the Nuconomy plugin.');
+define(NUCONOMY_STR_NOT_REGISTERED,'Nuconomy Insights Plugin:');
+define(NUCONOMY_STR_MUST_REGISTER,'You must <a href="%1$s">complete the activation process</a> in order to use the Nuconomy insights plugin.');
 define(NUCONOMY_STR_PRE23_LATER,'The Nuconomy Insights WordPress plugin only supports versions 2.3 or later of WordPress.');
 define(NUCONOMY_STR_23_REGISTER,'To register your blog, please first upgrade your WordPress installation to a supported version, then begin the activation process again.');
 define(NUCONOMY_STR_START_ENROLMENT,'During the activation process you will claim your blog in our system. Please make sure that you use a valid email.');
