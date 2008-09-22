@@ -12,4 +12,15 @@
   return false;
 }
 
-
+function fastswfembed(src,width,height,index) {
+  swfobject.embedSWF(src+'&enablejsapi=1&playerapiid=player'+index,
+                     'nuconyt'+index,
+                     width,
+                     height,
+                     "8",
+                     null,
+                     null, 
+                     { allowScriptAccess: "always" },
+                     { id: 'player'+index}
+                     );
+}
