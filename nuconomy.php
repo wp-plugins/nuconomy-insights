@@ -4,7 +4,7 @@ Plugin Name: Nuconomy Insights
 Plugin URI: http://nuconomy.com/
 Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="admin.php?page=nuconomy-insights/nuconomy.php">here</a>.
 Author: Nuconomy LTD
-Version: 1.34
+Version: 1.35
 Author URI: http://nuconomy.com/
 */
 
@@ -43,7 +43,7 @@ define(NUCONOMY_PAGE_HIT,683);
 define(NUCONOMY_POST_HIT,96);
 define(NUCONOMY_SEARCH_HIT,684);
 
-define(NUCONOMY_VERSION,1.34);
+define(NUCONOMY_VERSION,1.35);
 
 define(NUCONOMY_ENROLLMENT,"http://ws.nuconomy.com/Enrollment.asmx");
 
@@ -85,8 +85,10 @@ define(NUCONOMY_STR_DASHBOARD_LINK,'You can view your site\'s insights under the
 define(NUCONOMY_STR_NAME,'Your name:');
 define(NUCONOMY_STR_EMAIL,'Your e-mail:');
 define(NUCONOMY_STR_BLOGURL,'Your blog url:');
+define(NUCONOMY_STR_ENABLESPECIALCONFIGTITLE,'Special Settings');
 define(NUCONOMY_STR_ENABLEVIDEO,'Enable YouTube player tracking');
-define(NUCONOMY_STR_ENABLEVIDEOCONFIGTITLE,'Video Settings');
+define(NUCONOMY_STR_ENABLEADTRACKING,'Enable Ad tracking');
+
 
 /* if we came from rss, set a cookie and redirect to the original page */
 
@@ -179,7 +181,7 @@ function nucon_set_project_server_token($token) {
 
 function nucon_get_option($option) {
   global $nucon_is_mu;
-  $options = array('vers' => NUCONOMY_VERSION, 'videotrackingenabled' => 1);
+  $options = array('vers' => NUCONOMY_VERSION, 'videotrackingenabled' => 1, 'adtrackingenabled' => 1);
   
   if ($nucon_is_mu) {
     $ret_val=get_site_option($option);
@@ -230,10 +232,10 @@ function nucon_web_service($viewer,$owner,$url,$eventid,$data) {
 		                 "&ownus=$owner" .
 		                 "&crtId=$eventid" .
 		                 "&numVa=1" .
-						         "&genDim1=$data" .
+						 "&genDim1=$data" .
 		                 "&srcId=$url" .
-						         "&ses=$nuccoo_Cookie".
-                     "&nucuse=$nucuse_Cookie".
+						 "&ses=$nuccoo_Cookie" .
+					     "&nucuse=$nucuse_Cookie" .
                          "";
 
 		@$client->fetch( $desturl);
@@ -328,6 +330,7 @@ function nucon_addjs() {
       echo "\n";
       echo '<script type="text/javascript">'."\n";
 	    echo "NUCONOMY.ProjectToken = \"" . $project . "\";\n";
+		if (nucon_get_option('adtrackingenabled') == 1) echo "NUCONOMY.AdsTracker.Track();\n"; 
 	    $user=$current_user->user_login;
 	    $page_owner="";
 	    $page="http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
@@ -542,7 +545,9 @@ function nucon_config_page() {
     }
   } else if (isset($_POST['nucon-submit'])) {
     $enableyoutube = isset($_POST['nucon_videomonitoring']) ? 1 : 0;
+	$enableadtracking = isset($_POST['nucon_admonitoring']) ? 1 : 0;
     nucon_set_option('videotrackingenabled',$enableyoutube);
+	nucon_set_option('adtrackingenabled',$enableadtracking);
   }
   $opt = nucon_get_project_client_token();
 ?>
@@ -613,9 +618,10 @@ function nucon_config_page() {
     </p>
     <?php echo NUCONOMY_STR_RESET; ?>
     <p><button onclick="nucon_reset_tokens();"><?php echo NUCONOMY_STR_RESET_BUT;?></button></p>
-  <h2><?php echo NUCONOMY_STR_ENABLEVIDEOCONFIGTITLE; ?></h2>
+  <h2><?php echo NUCONOMY_STR_ENABLESPECIALCONFIGTITLE; ?></h2>
     <form method="post"  action="">
       <p><label for="nucon-video"><input id="nucon-video" type="checkbox" <?php if (nucon_get_option('videotrackingenabled') == 1) echo 'checked'; ?> name="nucon_videomonitoring"/><? echo NUCONOMY_STR_ENABLEVIDEO;?></label></p>
+	  <p><label for="nucon-adtracking"><input id="nucon-adtracking" type="checkbox" <?php if (nucon_get_option('adtrackingenabled') == 1) echo 'checked'; ?> name="nucon_admonitoring"/><? echo NUCONOMY_STR_ENABLEADTRACKING;?></label></p>
       <p class="submit"><input type="submit" name="nucon-submit" value="Save changes"/></p>
     </form>
   <?php 
