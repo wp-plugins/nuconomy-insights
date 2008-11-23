@@ -1122,8 +1122,8 @@ function nucon_add_head_js() {
 ?>
 
       <script type="text/javascript">
-           var _nucjs = (("https:" == document.location.protocol) ? "https://" : "http://");
-           document.write(unescape("%3Cscript src='" + _nucjs + "services.nuconomy.com/n.js' type='text/javascript'%3E%3C/script%3E"));
+        var _nucjs = (("https:" == document.location.protocol) ? "https://sslf" : "http://f");
+        document.write(unescape("%3Cscript src='" + _nucjs + ".nuconomy.com/n.js' type='text/javascript'%3E%3C/script%3E"));
       </script>
 <?php         
         if ($nucon_is_mu) {
