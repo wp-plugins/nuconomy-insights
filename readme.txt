@@ -3,8 +3,8 @@ Contributors: nuconomy
 Donate link: 
 Tags: analytics, insights, data, ratings
 Requires at least: 2.3
-Tested up to: 2.6.2
-Stable tag: 1.47
+Tested up to: 2.7
+Stable tag: 1.48
 
 Go beyond traditional metrics like the page view and instead measure engagement.
 == Description ==
