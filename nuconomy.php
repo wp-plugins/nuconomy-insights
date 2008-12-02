@@ -4,7 +4,7 @@ Plugin Name: Nuconomy Insights
 Plugin URI: http://nuconomy.com/
 Description: This plugin provides integration with the Nuconomy Insights service. First you need to <a href="options-general.php?page=nuconomy.php">register here</a>, and then you will be able to see the stats <a href="admin.php?page=nuconomy-insights/nuconomy.php">here</a>.
 Author: Nuconomy LTD
-Version: 1.47
+Version: 1.48
 Author URI: http://nuconomy.com/
 */
 
@@ -48,7 +48,7 @@ define(NUCONOMY_PAGE_HIT,683);
 define(NUCONOMY_POST_HIT,96);
 define(NUCONOMY_SEARCH_HIT,684);
 
-define(NUCONOMY_VERSION,"1.47");
+define(NUCONOMY_VERSION,"1.48");
 
 define(NUCONOMY_ENROLLMENT,"http://ws.nuconomy.com/Enrollment.asmx");
 
