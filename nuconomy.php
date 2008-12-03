@@ -85,7 +85,7 @@ define(NUCONOMY_STR_STEP2_REC,'Your request has been received by NuConomy and is
 define(NUCONOMY_STR_STEP2_GERB,'A reply should be arriving very soon...');
 define(NUCONOMY_STR_STEP2_REFRESH,'Don\'t want to wait for the automatic process to query the approval status?');
 define(NUCONOMY_STR_STEP2_REFRESH_LINK,'Follow this link to refresh the status manually.');
-define(NUCONOMY_STR_RESET,'If you wish to reset your registration, please click on the Reset Request button and begin your registretion again.');
+define(NUCONOMY_STR_RESET,'If you wish to reset your registration, please click on the Reset Request button and begin your registration again.');
 define(NUCONOMY_STR_STEP3,'Nuconomy Insights is activated');
 define(NUCONOMY_STR_ACTIVE,'Nothing to do here.');
 if (!$nucon_is_mu)
